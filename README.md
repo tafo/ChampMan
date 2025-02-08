@@ -1,8 +1,8 @@
-🏆 ChampMan
+# 🏆 ChampMan
 
 ChampMan is a Windows-based, text-based desktop football management simulation. This application aims to provide a unique football management experience by displaying match flow using text instead of graphical representations.
 
-🚀 Features
+# 🚀 Features
 
 ⚽ Text-Based Match Simulation: The match flow will be presented through event-based text descriptions.
 
@@ -12,7 +12,7 @@ ChampMan is a Windows-based, text-based desktop football management simulation. 
 
 🏗 Modular Architecture: Designed with a clean and extensible structure for easy expansion.
 
-📂 Installation
+# 📂 Installation
 
 Follow these steps to run the project:
 
@@ -30,7 +30,7 @@ dotnet restore
 dotnet run
 ```
 
-🔧 Requirements
+# 🔧 Requirements
 
 To run ChampMan, you need the following:
 
@@ -38,7 +38,7 @@ To run ChampMan, you need the following:
 - .NET 6+ SDK
 - IDE (Rider Recommended)
 
-🏗 Architecture
+# 🏗 Architecture
 
 The project follows SOLID principles and is divided into the following main components:
 
@@ -47,7 +47,7 @@ The project follows SOLID principles and is divided into the following main comp
 - UI Module: Displays match results and events using ListBox or rich text format.
 - Team & Player Management: Handles team and player data.
 
-🏆 Usage
+# 🏆 Usage
 
 Select Your Team: Choose a team to start your managerial career.
 
@@ -55,7 +55,7 @@ Manage Matches: Monitor player performance and develop tactics.
 
 Win the League: Make the right transfers and strategies to become the best team!
 
-📜 Contributing
+# 📜 Contributing
 
 If you would like to contribute to the project, follow these steps:
 
@@ -66,7 +66,7 @@ If you would like to contribute to the project, follow these steps:
 
 🚀 Start your football management journey with ChampMan and dominate the field! ⚽
 
-🏆 Gameplay Mechanics
+# 🏆 Gameplay Mechanics
 
 Player Attributes & Match Impact
 
@@ -80,7 +80,7 @@ Each player has a set of attributes rated on a 0-20 scale, where:
 
 These attributes influence match performance in various ways:
 
-⚽ Attacking Events
+# ⚽ Attacking Events
 
 | Event              | Affected Attributes                  | Description                               |
 |-------------------|--------------------------------|---------------------------------|
@@ -92,7 +92,7 @@ These attributes influence match performance in various ways:
 | Free Kicks       | Set Pieces, Technique, Finishing | Effectiveness in dead-ball situations. |
 | Off-the-Ball Movement | Off The Ball, Acceleration, Pace | Ability to find spaces and make runs. |
 
-🛡️ Defensive Events
+# 🛡️ Defensive Events
 
 | Event         | Affected Attributes               | Description                               |
 |-------------|--------------------------------|---------------------------------|
@@ -101,7 +101,7 @@ These attributes influence match performance in various ways:
 | Aerial Duels | Jumping, Heading, Strength      | Performance in heading challenges. |
 | Pressing     | Work Rate, Aggression, Stamina  | How effectively a player applies pressure. |
 
-📌 General Match Mechanics
+# 📌 General Match Mechanics
 
 | Event                   | Affected Attributes                  | Description                                |
 |------------------------|--------------------------------|--------------------------------|
@@ -109,15 +109,15 @@ These attributes influence match performance in various ways:
 | Critical Decision Making  | Decisions, Composure, Leadership | Ability to make the right choices under pressure. |
 | Team Leadership         | Leadership, Influence, Teamwork  | Motivating and organizing teammates. |
 
-🏆 Key Match Events
+# 🏆 Key Match Events
 
 In ChampMan, only significant moments of a match will be displayed. Routine midfield battles and uneventful periods will be skipped.
 
-⚽ Dynamic Match Events & Tactical Influence
+# ⚽ Dynamic Match Events & Tactical Influence
 
 Match event probabilities are dynamic and change based on team tactics and player instructions. The way teams play directly affects which events occur more frequently.
 
-📌 Tactical Adjustments & Their Impact on Match Events
+# 📌 Tactical Adjustments & Their Impact on Match Events
 
 | Tactical Choice  | Affected Events                                    | Effect |
 |-----------------|------------------------------------------------|---------|
@@ -128,7 +128,7 @@ Match event probabilities are dynamic and change based on team tactics and playe
 | High Pressing  | More Tackles, More Stamina Drain, Higher Risk of Mistakes | More defensive pressure but increases player fatigue. |
 | Low Block      | Less Pressing, More Defenders Behind the Ball    | Reduces opponent’s chances but lowers counter-attacking potential. |
 
-⚽ Dynamic Match Probability Calculations
+# ⚽ Dynamic Match Probability Calculations
 
 Probabilities are calculated based on the team’s chosen playstyle.
 
@@ -146,7 +146,7 @@ The attacking team will have more shots.
 
 The defending team will have more chances to win possession and counterattack.
 
-📜 Example Match Flow (Tactic-Based Probabilities)
+# 📜 Example Match Flow (Tactic-Based Probabilities)
 
 ```
 12' - The home team is pressing high! The away team struggles to keep possession.
@@ -157,3 +157,13 @@ The defending team will have more chances to win possession and counterattack.
 ```
 
 🚀 ChampMan dynamically adjusts match events based on tactical choices, making every match unique and exciting! ⚽
+
+# 📌 Updated Match Engine (Minute-by-Minute Event Check)
+
+```
+- Time will now advance in 1-minute increments.
+- Each minute, the system will check if an event occurs.
+- Events will initially be generated randomly.
+- The match will display results at the end.
+```
+
