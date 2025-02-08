@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <ListBox ItemsSource="{Binding MatchEvents}" Height="300" Width="500" Margin="10"/>
+        <Button Content="Start Match" Click="StartMatch_Click" Width="150" Height="30" Margin="10,320,0,0"/>
     </Grid>
 </Window>

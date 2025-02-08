@@ -10,3 +10,4 @@ namespace ChampMan.UI;
 public partial class App : Application
 {
 }
+
