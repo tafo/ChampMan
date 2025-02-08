@@ -108,3 +108,52 @@ These attributes influence match performance in various ways:
 | Fatigue & Performance Drop | Stamina, Injury Resistance   | Players tire as the match progresses. |
 | Critical Decision Making  | Decisions, Composure, Leadership | Ability to make the right choices under pressure. |
 | Team Leadership         | Leadership, Influence, Teamwork  | Motivating and organizing teammates. |
+
+🏆 Key Match Events
+
+In ChampMan, only significant moments of a match will be displayed. Routine midfield battles and uneventful periods will be skipped.
+
+⚽ Dynamic Match Events & Tactical Influence
+
+Match event probabilities are dynamic and change based on team tactics and player instructions. The way teams play directly affects which events occur more frequently.
+
+📌 Tactical Adjustments & Their Impact on Match Events
+
+| Tactical Choice  | Affected Events                                    | Effect |
+|-----------------|------------------------------------------------|---------|
+| Attacking      | More Shots, More Counterattacks, Less Defensive Actions | Increases shot attempts and attacking events, but leaves the defense vulnerable. |
+| Defensive      | More Tackles, More Interceptions, Fewer Shots    | Increases defensive actions but limits attacking opportunities. |
+| Aggressive     | More Fouls, More Cards, More Injuries            | Higher foul and booking probability, increasing physical battles. |
+| Possession     | More Passing Events, Fewer Long Balls, Lower Counterattacks | More ball control but fewer direct attacking chances. |
+| High Pressing  | More Tackles, More Stamina Drain, Higher Risk of Mistakes | More defensive pressure but increases player fatigue. |
+| Low Block      | Less Pressing, More Defenders Behind the Ball    | Reduces opponent’s chances but lowers counter-attacking potential. |
+
+⚽ Dynamic Match Probability Calculations
+
+Probabilities are calculated based on the team’s chosen playstyle.
+
+Example Scenarios:
+
+If both teams play aggressively:
+
+Foul & Card probability increases.
+
+More free kicks and penalties occur.
+
+If one team plays attacking while the other defends deeply:
+
+The attacking team will have more shots.
+
+The defending team will have more chances to win possession and counterattack.
+
+📜 Example Match Flow (Tactic-Based Probabilities)
+
+```
+12' - The home team is pressing high! The away team struggles to keep possession.
+27' - Hard tackle! The referee reaches into his pocket... Yellow card!
+42' - Long pass to the winger, he cuts inside... takes a shot! Blocked by the defender!
+56' - The away team is sitting deep, defending with numbers. Can they hold on?
+78' - Quick counterattack! The striker is through on goal… GOAL! 1-0!
+```
+
+🚀 ChampMan dynamically adjusts match events based on tactical choices, making every match unique and exciting! ⚽
